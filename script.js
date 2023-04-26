@@ -19,9 +19,6 @@ window.onload = function () {
     var getHint = document.getElementById("hint");
     var showClue = document.getElementById("clue");
   
-  
-  
-
     var buttons = function () {
       myButtons = document.getElementById('buttons');
       letters = document.createElement('ul');
@@ -36,8 +33,6 @@ window.onload = function () {
         letters.appendChild(list);
       }
     }
-      
-    
 
     var selectCat = function () {
       if (chosenCategory === categories[0]) {
@@ -48,7 +43,6 @@ window.onload = function () {
         catagoryName.innerHTML = "The Chosen Category Is Cities";
       }
     }
-  
 
      result = function () {
       wordHolder = document.getElementById('hold');
@@ -70,7 +64,6 @@ window.onload = function () {
         correct.appendChild(guess);
       }
     }
-    
 
      comments = function () {
       showLives.innerHTML = "You have " + lives + " lives";
@@ -84,14 +77,11 @@ window.onload = function () {
       }
     }
   
-
     var animate = function () {
       var drawMe = lives ;
       drawArray[drawMe]();
     }
   
-    
-
     canvas =  function(){
   
       myStickman = document.getElementById("stickman");
@@ -154,8 +144,6 @@ window.onload = function () {
     
     drawArray = [rightLeg, leftLeg, rightArm, leftArm,  torso,  head, frame4, frame3, frame2, frame1]; 
   
-  
-
      check = function () {
       list.onclick = function () {
         var geuss = (this.innerHTML);
@@ -178,8 +166,6 @@ window.onload = function () {
       }
     }
     
-      
-
     play = function () {
       categories = [
           ["everton", "liverpool", "swansea", "chelsea", "hull", "manchester-city", "newcastle-united"],
@@ -205,8 +191,6 @@ window.onload = function () {
   
     play();
     
-
-  
       hint.onclick = function() {
   
         hints = [
@@ -220,7 +204,6 @@ window.onload = function () {
       showClue.innerHTML = "Clue: - " +  hints [catagoryIndex][hintIndex];
     };
 
-  
     document.getElementById('reset').onclick = function() {
       correct.parentNode.removeChild(correct);
       letters.parentNode.removeChild(letters);
@@ -229,6 +212,3 @@ window.onload = function () {
       play();
     }
   }
-  
-  
-
