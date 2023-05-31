@@ -155,6 +155,7 @@ window.onload = function () {
             counter += 1;
           } 
         }
+        
         var j = (word.indexOf(geuss));
         if (j === -1) {
           lives -= 1;
