@@ -9,11 +9,7 @@ This is a javascript hangman game where you try to guess the word based off of c
     Grayed out letters that have already been chosen.
     Play again feature.
 
-Tech Stack
+## Deployment
 
-Client: React, React Hooks, Material UI(5)
-
-API: Rapid API Exercises DB, YT Search API
-Deployment
-
-This site is deployed here : Fitness App
+This site is deployed here :
+[Hangman Game](https://hangman-game-matt.netlify.app/)
