@@ -6,7 +6,7 @@ This is a javascript hangman game where you try to guess the word based off of c
     Multiple categories with multiple answers.
     Hint feature if you get stuck.
     Guesses left feature.
-    Grayed out letters that have already been chosen.
+    Grayed out the letters that have already been chosen.
     Play again feature.
 
 ## Deployment
